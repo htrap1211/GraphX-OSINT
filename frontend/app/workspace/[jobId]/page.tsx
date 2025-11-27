@@ -434,7 +434,7 @@ export default function WorkspacePage() {
             },
             shape: (ele: any) => {
               const config = NODE_CONFIG[ele.data("type") as keyof typeof NODE_CONFIG];
-              return config?.shape || "ellipse";
+              return (config?.shape || "ellipse") as any;
             },
             label: "data(label)",
             color: "#fff",
