@@ -34,11 +34,13 @@ const decryptKey = (encrypted: string): string => {
 export const auth = {
   // Check if user is logged in
   isAuthenticated(): boolean {
+    if (typeof window === 'undefined') return false; // SSR check
     return !!localStorage.getItem(AUTH_KEY);
   },
 
   // Get current user
   getCurrentUser(): User | null {
+    if (typeof window === 'undefined') return null; // SSR check
     const userStr = localStorage.getItem(USER_KEY);
     if (!userStr) return null;
     return JSON.parse(userStr);
@@ -81,6 +83,7 @@ export const auth = {
   },
 
   getApiKeys(): ApiKeys {
+    if (typeof window === 'undefined') return {}; // SSR check
     const keysStr = localStorage.getItem(API_KEYS_KEY);
     if (!keysStr) return {};
 
@@ -112,6 +115,7 @@ export const auth = {
   },
 
   hasCompletedOnboarding(): boolean {
+    if (typeof window === 'undefined') return false; // SSR check
     return localStorage.getItem(ONBOARDING_KEY) === 'true';
   },
 };
