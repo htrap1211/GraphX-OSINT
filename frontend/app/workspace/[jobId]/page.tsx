@@ -503,7 +503,6 @@ export default function WorkspacePage() {
       ],
       layout: {
         name: "fcose",
-        quality: "default" as any,
         randomize: false,
         animate: true,
         animationDuration: 1000,
@@ -512,7 +511,7 @@ export default function WorkspacePage() {
         nodeRepulsion: 8000,
         idealEdgeLength: 100,
         edgeElasticity: 0.45,
-      },
+      } as any,
     });
 
     // Node click handler
