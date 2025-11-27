@@ -503,7 +503,7 @@ export default function WorkspacePage() {
       ],
       layout: {
         name: "fcose",
-        quality: "default",
+        quality: "default" as any,
         randomize: false,
         animate: true,
         animationDuration: 1000,
