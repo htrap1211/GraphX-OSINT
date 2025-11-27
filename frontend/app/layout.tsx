@@ -3,8 +3,15 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OSINT Intelligence Graph Explorer",
-  description: "Open-source intelligence investigation and graph visualization platform",
+  title: "GraphX-OSINT | Intelligence Graph Explorer",
+  description: "Professional OSINT investigation platform with graph visualization and 10+ intelligence sources",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({

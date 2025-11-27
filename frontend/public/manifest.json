@@ -1,0 +1,17 @@
+{
+  "name": "GraphX-OSINT Intelligence Explorer",
+  "short_name": "GraphX-OSINT",
+  "description": "Professional OSINT investigation platform with graph visualization",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
