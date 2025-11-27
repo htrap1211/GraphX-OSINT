@@ -473,7 +473,7 @@ export default function WorkspacePage() {
             "curve-style": "bezier",
             label: "data(label)",
             "font-size": "9px",
-            "font-weight": "500",
+            "font-weight": "500" as any,
             color: "#9ca3af",
             "text-rotation": "autorotate",
             "text-margin-y": -12,
