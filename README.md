@@ -7,6 +7,14 @@ A professional OSINT investigation platform that automatically enriches entities
 ![Next.js](https://img.shields.io/badge/next.js-14-black.svg)
 ![Neo4j](https://img.shields.io/badge/neo4j-5.x-green.svg)
 
+## 🚀 Quick Deploy
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/graphx-osint)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/htrap1211/GraphX-OSINT)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/htrap1211/GraphX-OSINT)
+
+**[📖 Full Deployment Guide](DEPLOYMENT.md)** | **[⚙️ Setup Instructions](SETUP.md)** | **[🎨 UI Enhancements](UI_ENHANCEMENTS.md)**
+
 ## ✨ Features
 
 ### 🔍 OSINT Intelligence Gathering

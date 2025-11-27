@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: graphx-osint-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USER
+        value: neo4j
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+    healthCheckPath: /health
+
+  - type: web
+    name: graphx-osint-frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
+
+  - type: redis
+    name: graphx-osint-redis
+    ipAllowList: []
+
+databases:
+  - name: graphx-osint-neo4j
+    databaseName: neo4j
+    user: neo4j
