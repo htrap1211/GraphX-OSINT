@@ -441,7 +441,7 @@ export default function WorkspacePage() {
             "text-valign": "center",
             "text-halign": "center",
             "font-size": "11px",
-            "font-weight": "600",
+            "font-weight": "600" as any,
             "text-outline-width": 2,
             "text-outline-color": (ele: any) => {
               const config = NODE_CONFIG[ele.data("type") as keyof typeof NODE_CONFIG];
